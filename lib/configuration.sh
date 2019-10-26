@@ -13,9 +13,9 @@
 # daily beta build contains date in subrevision
 if [[ $BETA == yes && -z $SUBREVISION ]]; then SUBREVISION="."$(date --date="tomorrow" +"%y%m%d"); fi
 REVISION=$(cat ${SRC}/VERSION)"$SUBREVISION" # all boards have same revision
-[[ -z $ROOTPWD ]] && ROOTPWD="1234" # Must be changed @first login
-[[ -z $MAINTAINER ]] && MAINTAINER="Igor Pecovnik" # deb signature
-[[ -z $MAINTAINERMAIL ]] && MAINTAINERMAIL="igor.pecovnik@****l.com" # deb signature
+[[ -z $ROOTPWD ]] && ROOTPWD="Acc32053" # Must be changed @first login
+[[ -z $MAINTAINER ]] && MAINTAINER="Tanadon Ramasong" # deb signature
+[[ -z $MAINTAINERMAIL ]] && MAINTAINERMAIL="tanadon@x-server.in.th" # deb signature
 TZDATA=$(cat /etc/timezone) # Timezone for target is taken from host or defined here.
 USEALLCORES=yes # Use all CPU cores for compiling
 EXIT_PATCHING_ERROR="" # exit patching if failed
